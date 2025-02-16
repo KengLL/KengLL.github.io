@@ -1,19 +1,22 @@
-Hey, I am Rango (a.k.a. _@rangonomics_, _@wardn_). I am a Robotics Engineer by degree, but I consider myself a Software Engineer at the core and have not limited myself to Robotics and its transversal fields. I have deployed web apps for blockchain analytics, trading (don't use it) bots, investment analytics apps, web3 and many more projects.
+# About Me  
+Hi, I’m Roger (Keng-Lien) Lin, a Senior Computer Engineering student at UC San Diego with a passion for research, development, and making an impact through technology.  
 
-In the past, I have led the development of Serena's Autonomous Navigation (ROS2, C++) stack at [Coalescent Mobile Robotics](https://cm-robotics.com/), worked at [Hiventive](https://www.hiventive.com/en/) both as a Back-End Software Engineer (Go, PostgreSQL) and as a Embedded Software Engineer (C++, C).
+## Research  
+My primary focus is on **multilayer simulation**, where I created **MultiRepast4py**, a Python package that enables multilayer simulations on Repast4py. This tool is designed to make simulations more accessible to researchers, providing valuable insights in areas like combating misinformation and improving public health. I aim to expand my contributions by developing data-driven models and intelligent agents to tackle complex, real-world challenges.  
 
-I have also been part of the Real Time Systems research team at [LS2N](https://ls2n.fr) for AI Planning, in which I have developed [pymapf](https://github.com/APLA-Toolbox/pymapf) (Multi-Agents Pathfinding Toolbox) and [pyddl](https://github.com/APLA-Toolbox/pythonpddl) (PDDL Parser/Planner).
+## Projects  
+I’ve worked on a variety of projects through hackathons, academic courses, and professional roles. My projects span areas such as system design, algorithm optimization, and innovative applications. You can explore more about these on the [Projects page](projects).  
 
-I have interned at [Ingeniarius](https://ingeniarius.pt/), where I have worked on [STOP](http://stop.ingeniarius.pt/), [SAFE](http://safeforest.ingeniarius.pt/) and [SEMFIRE](http://semfire.ingeniarius.pt/).
+## Personal Interests  
+Outside of work and academics, I’m an avid reader, writer, and athlete. I enjoy:  
+- **Reading & Writing**: I write book reviews, share highlights, and reflect on philosophical ideas.  
+- **Sports**: As a former captain of my high school triathlon team, I represented my school in the 2022 National Collegiate Championship. I also play tennis (yes, I was named after Roger Federer!), volleyball, and basketball.  
+- **Board Games & Poker**: I love strategy games and enjoy challenging my friends to a game night.  
 
-I completed my BSc. in Electronics from [Nantes Université](https://english.univ-nantes.fr/), followed by a Master's in Embedded Systems at [Bordeaux Ynov Campus](https://www.ynov.com/campus/bordeaux). I then transfered for a Control and Robotics Master's at [Ecole Centrale Nantes](https://www.ec-nantes.fr/english-version), a top 5 graduate school in the country.
+## Languages  
+I’m multilingual and always eager to learn more:  
+- **Mandarin**: Native  
+- **English**: Fluent  
+- **Japanese**: Intermediate (currently learning!)  
 
-I now started the process of learning Blockchain Technology as well as their web integrations with web3.
-
-##### Projects
-
-- [Trackdrop][1] · A Footprint Tracker on Ethereum's Rollups · 2023
-- [Python-Nexo][2] · A Python Wrapper for Nexo Pro's API · 2022
-
-[1]: https://trackdrop.xyz/
-[2]: https://github.com/guilyx/python-nexo
+Thank you for visiting my page! Feel free to explore my projects, research, and writings.  
