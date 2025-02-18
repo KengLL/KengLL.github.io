@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MultiRepast4py
+github: "https://kengll.github.io"
 image: "/img/in-project/minds_lab.png"
 tech:
   - name: "Repast4py"
@@ -15,12 +16,11 @@ description: Developed MultiRepast4py, a framework extending Repast4py to enable
 ## Overview
 MultiRepast4py is a Python-based framework that extends Repast4py to support agent-based simulations on multilayer networks. This tool empowers researchers to model and analyze complex interactions across interconnected systems, such as multilayer social networks or multi-modal transportation systems, while maintaining scalability and efficiency.
 
----
 
 ## Introduction
 Agent-Based Simulations (ABS) are a cornerstone for studying complex systems. Existing platforms like NetLogo and Repast are often limited to single-layer networks, failing to capture the nuances of multilayer interactions. MultiRepast4py addresses this gap by enabling simulations where agents operate across multiple interconnected networks, such as overlapping social media platforms or integrated transport systems.
 
----
+
 
 ## Features
 - **Multilayer Simulation Capability**: Allows dynamic modeling of agents across multiple layers of interaction.

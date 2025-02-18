@@ -3,6 +3,7 @@ layout: page_no_sidebar
 title: "Projects"
 header-img: img/project-banner.jpg
 sidebar: false
+github: "https://kengll.github.io"
 description: "What I cannot create, I do not understand.- Richard Feynman."
 ---
 <style>
@@ -100,37 +101,41 @@ description: "What I cannot create, I do not understand.- Richard Feynman."
         transform: scale(1.1);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 700px) {
         .project {
             flex-direction: column;
+            height: auto; /* Remove fixed height */
         }
 
         .project-image {
-            flex: 0 0 auto; /* Reset flex for mobile */
-            aspect-ratio: 16 / 9; /* Wider aspect ratio for mobile */
+            flex: none; /* Reset flex basis */
+            aspect-ratio: auto; /* Allow natural aspect ratio */
+            height: 200px; /* Fixed image height */
+            width: 100%;
+        }
+
+        .project-info p {
+            display: none; /* Hide description on mobile */
+        }
+
+        .project-info h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* Truncate long titles */
+            margin-bottom: 8px; /* Reduce spacing */
         }
 
         .tech-icons {
-            padding-top: 15px;
+            margin-top: auto; /* Push icons to bottom */
+            padding-top: 10px; /* Add spacing above icons */
         }
-    }
-
-    @media (max-width: 576px) {
-        .project-image {
-            aspect-ratio: 16 / 9; /* Wider aspect ratio for smaller screens */
-        }
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
     }
     
 </style>
 
 <div id="projects" class="background-alt">
     <div class="container">
-        <div class="row">
+        <div class="project-row">
             {% for project in site.projects %}
             <div class="col-lg-6 col-md-6 mb-4 h-100">
                 <div class="project">
@@ -164,12 +169,12 @@ description: "What I cannot create, I do not understand.- Richard Feynman."
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Projects</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Projects &rarr;</a>
     </li>
     {% endif %}
 </ul>
