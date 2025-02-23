@@ -12,6 +12,10 @@ tech:
   - name: "Python"
     icon: "/img/tech/python.png"
 description: Built an autonomous vehicle prototype with lane following, GPS path tracking, and dynamic lane switching, displaying robotics and AI capabilities.
+tags:
+  - AI
+  - Simulation
+  - CV
 ---
 
 # Autonomous Vehicle Development with Jetson Nano and Donkey car

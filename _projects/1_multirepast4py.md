@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MultiRepast4py
-github: "https://kengll.github.io"
+github: "https://github.com/KengLL/MultiRepast4py"
 image: "/img/in-project/minds_lab.png"
 tech:
   - name: "Repast4py"
@@ -9,106 +9,48 @@ tech:
   - name: "Python"
     icon: "/img/tech/python.png"
 description: Developed MultiRepast4py, a framework extending Repast4py to enable multilayer agent-based simulations for analyzing complex, interconnected systems.
+tags: [Research, Simulation, Systems, Agents]
 ---
 
-# MultiRepast4py: Enabling Multilayer Agent-Based Simulations
+# Empowering Multilayer Simulations
 
-## Overview
-MultiRepast4py is a Python-based framework that extends Repast4py to support agent-based simulations on multilayer networks. This tool empowers researchers to model and analyze complex interactions across interconnected systems, such as multilayer social networks or multi-modal transportation systems, while maintaining scalability and efficiency.
+### 1. **Introduction**  
+MultiRepast4py is a Python package that extends the Repast4py agent-based simulation platform to support multilayer simulations.  
+
+Humans naturally navigate multiple social identities (intersectionality)—we participate in workplaces, families, and various other networks simultaneously. Multilayer simulations capture these complex, interconnected interactions, enabling more accurate modeling of real-world dynamics.
+
+![Concept of Edge storing](/img/in-project/multi_edge.jpeg)
 
 
-## Introduction
-Agent-Based Simulations (ABS) are a cornerstone for studying complex systems. Existing platforms like NetLogo and Repast are often limited to single-layer networks, failing to capture the nuances of multilayer interactions. MultiRepast4py addresses this gap by enabling simulations where agents operate across multiple interconnected networks, such as overlapping social media platforms or integrated transport systems.
+## Key Achievements
+**Enhanced Scalability**:
+Increased simulation capacity by **100x** to support **50,000 agents per layer** on commercial edge devices. (Apple M2 chip, 8gb RAM)
 
+**Innovative Data Management**:
+Transitioned from traditional matrix-based edge storage to **decentralized per-agent edge lists**, ensuring efficient memory usage and easier manipulation of complex network interactions.
 
+**User-Friendly Transition**:
+Enabled a smooth upgrade from single-layer models with **minimal modifications**, complete with comprehensive documentation and demo examples.
 
-## Features
-- **Multilayer Simulation Capability**: Allows dynamic modeling of agents across multiple layers of interaction.
-- **Scalability**: Built on Repast4py, leveraging MPI for distributed simulations, supporting large-scale models.
-- **Ease of Use**: Minimal modifications required for integrating multilayer networks with existing single-layer models.
-- **Customizability**: Compatible with Python libraries for data-driven and machine learning-enhanced ABS.
+**Recognized Excellence**:
+Awarded the **SRIP scholarship**, presented at the **2024 UC San Diego Summer Research Conference**, and recognized as first author on a research paper submitted to **AAMAS 2025**.
 
----
+## Technical Approach  
+The core implementation of MultiRepast4py focuses on processing input files efficiently. Instead of relying on traditional adjacency matrices, we parse network files by extracting edges for each agent and storing them in dictionaries. This decentralized approach allows models to reconstruct network structures dynamically using built-in functions from the MultiRepast4py package. Additionally, helper functions are provided to simplify the agent construction process.  
 
-## Software Architecture
-- **Framework**: Repast4py
-- **Programming Language**: Python
-- **Key Innovations**:
-  - Multilayer network file parsing and reconstruction.
-  - Efficient memory management with compression and encoding for network data.
-  - Support for parallel agent initialization and execution.
+## Impact & Recognition  
+MultiRepast4py enables researchers to gain deeper insights into various domains, including public health policy, misinformation dynamics, and complex social behaviors.  
 
-**Image Slot**: Add a system diagram or architecture flowchart to visualize the multilayer simulation framework.
+My primary focus is on misinformation. Growing up in a geopolitically tense region, I’ve witnessed how misinformation can threaten democratic discourse and social stability. I believe that fostering a safe environment for healthy discussions requires robust defenses against cyber threats, including misinformation campaigns. MultiRepast4py provides a framework to study these challenges and develop potential countermeasures.  
 
----
+## How to Get Started  
+A detailed tutorial is available on the [GitHub repository](https://github.com/KengLL/MultiRepast4py).  
 
-## Key Contributions
-### 1. Multilayer Agent-Based Simulation Capability
-MultiRepast4py enables researchers to simulate multilayer networks by seamlessly integrating inter-layer and intra-layer dynamics. This allows nuanced modeling of systems where multiple interaction modalities influence outcomes.
+This implementation is a direct extension of the **Rumor Model in Repast4py**, showcasing a clear and intuitive transformation into a multilayer simulation framework.  
 
-### 2. Efficient Memory and Parallel Processing
-The framework introduces a decentralized data structure for agent attributes and employs compression techniques to optimize memory usage and performance for large-scale simulations.
+## Acknowledgments  
+Special thanks to the UCSD Summer Research Internship Program, NSF (Award CCF-2416311), and [MINDS Lab](https://parinazn.com/group/) for their support and the opportunity to pursue this research.  
 
-### 3. Ease of Transition from Single-Layer Models
-With minimal additional attributes and reconstruction of network data, researchers can adapt existing single-layer ABS models to the multilayer paradigm.
-
-**Image Slot**: Include a simplified example of a multilayer network representation.
-
----
-
-## Experimental Demonstration: Rumor Propagation
-We demonstrated MultiRepast4py’s capabilities through a case study on rumor propagation across multilayer social networks.
-
-### Simulation Setup
-- **Network Topology**: Two-layer multiplex network with distinct social platforms modeled as Erdős–Rényi graphs.
-- **Agent State Model**:
-  - `received_rumor`: Binary state tracking rumor spread.
-  - `shadow_data`: Multilayer adjacency list for network connections.
-- **Simulation Protocol**: Monte Carlo simulations with 2,500 runs, analyzing propagation dynamics influenced by cross-layer connectivity.
-
-### Findings
-- Cross-platform connectivity significantly enhanced global propagation efficiency, surpassing single-layer analyses.
-- Combined degree centrality emerged as a critical metric for optimizing diffusion strategies.
-
-**Image Slot**: Add propagation results or comparative diffusion curves.
-
----
-
-## Challenges and Solutions
-### Challenges:
-1. **Complexity of Multilayer Models**: Required efficient data structures for inter-layer and intra-layer interactions.
-2. **Memory Overhead**: Storing large multilayer networks posed computational challenges.
-3. **Real-Time Simulation Dynamics**: Incorporating dynamic interactions across layers required adaptive scheduling.
-
-### Solutions:
-1. Developed a unified representation for multilayer edges.
-2. Compressed and encoded network data for efficient storage and access.
-3. Leveraged Repast4py’s scheduling to enable dynamic layer-specific interactions.
-
-**Image Slot**: Before-and-after performance comparison or memory optimization charts.
-
----
-
-## Results
-MultiRepast4py demonstrated:
-- Scalability to 50,000 agents per layer with efficient execution on consumer-grade hardware.
-- Enhanced prediction accuracy for complex systems like cross-platform information diffusion.
-
-**Image Slot**: Add a final demonstration image or chart highlighting large-scale simulation results.
-
----
-
-## Future Work
-- Incorporating real-world data into simulations for data-driven ABS.
-- Extending to support heterogeneous inter-layer interactions.
-- Exploring integration with advanced visualization tools for multilayer networks.
-
----
-
-## Conclusion
-MultiRepast4py bridges the gap in ABS platforms by introducing robust multilayer simulation capabilities. It offers a powerful tool for researchers to explore complex systems with interconnected dynamics, paving the way for improved predictions and interventions.
-
----
-
-**Acknowledgments**
-Special thanks to the UCSD Summer Research Internship Program and NSF (Award CCF-2416311) for their support.
+## Additional Information  
+- **Paper:** [AAMAS, arXiv (link to be added)]  
+- **Future Work:** We plan to incorporate **data-driven features** and explore the integration of **intelligent agents powered by LLMs** to enhance the simulation capabilities.  

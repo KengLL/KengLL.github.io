@@ -6,6 +6,10 @@ tech:
   - name: "System Verilog"
     icon: "/img/tech/system_verilog.png"
 description: TALLY is an accumulator-based architecture designed for simplicity and efficiency, utilizing a single accumulator register for basic arithmetic and data movement.
+tags:
+  - Simulation
+  - Systems
+  - Optimization
 ---
 
 # TALLY: An Accumulator-Based Architecture

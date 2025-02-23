@@ -8,6 +8,10 @@ tech:
   - name: "Python"
     icon: "/img/tech/python.png"
 description: Created a real-time indoor navigation system in 24 hours, integrating experimental Wi-Fi signal platforms with a Python server and JavaScript interface. 1st Place Winner at HARD Hack 2023.
+tags:
+  - System
+  - Signal 
+  - Dev
 ---
 
 # Indoor Navigation System with Wi-Fi Signal Integration
