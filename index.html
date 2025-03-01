@@ -6,6 +6,59 @@ sidebar: false
 github: "https://github.com/KengLL"
 description: "What I cannot create, I do not understand.- Richard Feynman."
 ---
+<div id="projects" class="background-alt">
+    <div class="container">     
+        <div id="tag-cloud" class="tags tags-sup js-tags">
+            <a class="tag-button--all" data-encode="">
+                Show all
+                <sup>{{site.projects.size}}</sup>
+            </a>
+        </div>
+        <div class="project-row">
+            {% for project in site.projects %}
+            <div class="col-lg-6 col-md-6 mb-4 h-100">
+                <div class="project">
+                    <a href="{{ project.url | prepend: site.baseurl }}" class="project-image">
+                        <img src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.title }}">
+                    </a>
+                    <div class="project-info">
+                        <div class="project-content">
+                            <a href="{{ project.url | prepend: site.baseurl }}">
+                                <h3>{{ project.title }}</h3>
+                                <p>{{ project.description }}</p>
+                            </a>
+                        </div>
+                        <div class="tech-icons">
+                            {% for tech in project.tech %}
+                                <a href="{{ tech.url }}" target="_blank" title="Visit {{ tech.name }} documentation">
+                                    <img src="{{ tech.icon | prepend: site.baseurl }}" alt="{{ tech.name }}" title="{{ tech.name }}">
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Projects</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Projects &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
 <style>
     #projects {
         padding: 50px 15px;
@@ -131,50 +184,3 @@ description: "What I cannot create, I do not understand.- Richard Feynman."
         }
     }
 </style>
-
-<div id="projects" class="background-alt">
-    <div class="container">     
-        <div class="project-row">
-            {% for project in site.projects %}
-            <div class="col-lg-6 col-md-6 mb-4 h-100">
-                <div class="project">
-                    <a href="{{ project.url | prepend: site.baseurl }}" class="project-image">
-                        <img src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.title }}">
-                    </a>
-                    <div class="project-info">
-                        <div class="project-content">
-                            <a href="{{ project.url | prepend: site.baseurl }}">
-                                <h3>{{ project.title }}</h3>
-                                <p>{{ project.description }}</p>
-                            </a>
-                        </div>
-                        <div class="tech-icons">
-                            {% for tech in project.tech %}
-                                <a href="{{ tech.url }}" target="_blank" title="Visit {{ tech.name }} documentation">
-                                    <img src="{{ tech.icon | prepend: site.baseurl }}" alt="{{ tech.name }}" title="{{ tech.name }}">
-                                </a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Projects</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Projects &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}

@@ -9,8 +9,7 @@ tech:
     icon: "/img/tech/django.png"
 description: Developed an interactive Member Portal for 400+ users, enhancing user experience with dynamic views, renovate dev team working pipeline.
 tags:
-  - System  
-  - Web Dev
+  - Software Development
 ---
 
 # Interactive Member Portal with Svelte and Django

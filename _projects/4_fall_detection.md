@@ -9,8 +9,7 @@ tech:
     icon: "/img/tech/python.png"
 description: Engineered a fall detection sensor with G-sensor technology and P2P communication, achieving a lightweight, practical design for real-world use. 1st Place Winner at HARD Hack 2024.
 tags:
-  - Dev
-  - Systems
+  - Embedded System
 ---
 
 # Fall Detection Device: Lightweight and Practical Fall Sensor
