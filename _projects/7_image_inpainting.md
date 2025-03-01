@@ -10,7 +10,7 @@ tech:
     icon: "/img/tech/python.png"
 description: Implement Partial Convolution for free form impainitng
 tags:
-    - AI/ML
+    - "AI/ML"
     - Research 
 ---
 

@@ -1,9 +1,9 @@
 {% comment %}
-    @param {string} type - 'page' | 'post' | 'keynote'
+    @param {string} type - 'page' | 'post' | 'keynote' | 'page_no_sidebar'
     @param {boolean} short
 {% endcomment %}
 
-{% if include.type == 'post' or include.type == 'page' %}
+{% if include.type == 'post' or include.type == 'page' or include.type == 'page_no_sidebar' %}
 <style type="text/css">
     header.intro-header{
         position: relative;
@@ -139,11 +139,6 @@
         <img src="{{ site.baseurl }}/img/tech/medium.png" alt="Medium">
     </a>
     {% endif %}
-    {% if page.github %}
-    <a href="{{ page.github }}" class="github-logo-header" target="_blank" rel="noopener">
-        <img src="{{ site.baseurl }}/img/tech/white_github.png" alt="GitHub Repository">
-    </a>
-    {% endif %}
   </div>
 </header>
 <style type="text/css">
@@ -180,6 +175,47 @@
     .medium img {
         width: 39px;
         height: 39px;
+        display: block;
+        cursor: pointer !important;
+    }
+</style>
+{% endif %}
+
+
+{% if include.type == 'page_no_sidebar' %}
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+        <div class="site-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <span class="subheading">{{ page.description }}</span>
+        </div>
+    </div>
+    {% if page.github %}
+    <a href="{{ page.github }}" class="github-logo-header" target="_blank" rel="noopener">
+        <img src="{{ site.baseurl }}/img/tech/white_github.png" alt="GitHub Repository">
+    </a>
+    {% endif %}
+  </div>
+</header>
+<style type="text/css">
+    .github-logo-header{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 6px;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+
+    .github-logo-header img{
+        width: 35px;
+        height: 35px;
         display: block;
         cursor: pointer !important;
     }

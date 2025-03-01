@@ -4,42 +4,102 @@ title: "Projects"
 header-img: img/project-banner.jpg
 sidebar: false
 github: "https://github.com/KengLL"
-description: "What I cannot create, I do not understand.- Richard Feynman."
+description: "What I cannot create, I do not understand. - Richard Feynman."
 ---
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all tag buttons and project items
+        const tagButtons = document.querySelectorAll('.js-tags .tag-button');
+        const allTagButton = document.querySelector('.tag-button--all');
+        const projectItems = document.querySelectorAll('.project-item'); 
+        // Filter function
+        function filterProjects(selectedTag) {
+            projectItems.forEach(project => {
+                const tags = JSON.parse(project.dataset.tags);
+                const hasTag = !selectedTag || tags.includes(selectedTag);
+                project.style.display = hasTag ? 'block' : 'none';
+            });
+        }
+    
+        // Click handler for tag buttons
+        tagButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const selectedTag = decodeURIComponent(this.dataset.encode.replace(/\+/g, ' ')).toLowerCase();
+                
+                // Toggle active state
+                tagButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                filterProjects(selectedTag);
+            });
+        });
+    
+        // Click handler for "Show All" button
+        allTagButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            tagButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            filterProjects(null);
+        });
+    });
+</script>
 <div id="projects" class="background-alt">
-    <div class="container">     
-        <div id="tag-cloud" class="tags tags-sup js-tags">
-            <a class="tag-button--all" data-encode="">
-                Show all
-                <sup>{{site.projects.size}}</sup>
-            </a>
-        </div>
-        <div class="project-row">
-            {% for project in site.projects %}
-            <div class="col-lg-6 col-md-6 mb-4 h-100">
-                <div class="project">
-                    <a href="{{ project.url | prepend: site.baseurl }}" class="project-image">
-                        <img src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.title }}">
-                    </a>
-                    <div class="project-info">
-                        <div class="project-content">
-                            <a href="{{ project.url | prepend: site.baseurl }}">
-                                <h3>{{ project.title }}</h3>
-                                <p>{{ project.description }}</p>
-                            </a>
-                        </div>
-                        <div class="tech-icons">
-                            {% for tech in project.tech %}
-                                <a href="{{ tech.url }}" target="_blank" title="Visit {{ tech.name }} documentation">
-                                    <img src="{{ tech.icon | prepend: site.baseurl }}" alt="{{ tech.name }}" title="{{ tech.name }}">
+    <div id='tag_cloud' class="tags tags-sup js-tags">
+        <a class="tag-button--all" data-encode="">
+            Show All
+            <sup>{{site.projects.size}}</sup>
+        </a>
+        {% assign project_tags = "" | split: "," %}
+        {% for project in site.projects %}
+            {% if project.tags %}   
+                {% for tag in project.tags %}
+                    {% assign project_tags = project_tags | push: tag %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+        {% assign grouped_project_tags = project_tags | group_by_exp: "tag", "tag" | sort:"size" | reverse %}
+        {% capture tags %}
+        {% for tag_group in grouped_project_tags %}
+            <a data-encode="{{ tag_group.name | url_encode }}" 
+            class="tag-button" 
+            title="{{ tag_group.name }}"
+            rel="{{ tag_group.size }}">
+            {{ tag_group.name }}
+            <sup>{{tag_group.size}}</sup>
+        {% endfor %}
+        {% endcapture %}
+        {{ tags }}
+    </div>
+    <div class="project-row">
+        {% for project in site.projects %}
+            <div class="project-item" data-tags='{{ project.tags | default: "[]" | jsonify | downcase }}'>
+                <div class="col-lg-6 col-md-6 mb-4 h-100">
+                    <div class="project">
+                        <a href="{{ project.url | prepend: site.baseurl }}" class="project-image">
+                            <img src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.title }}">
+                        </a>
+                        <div class="project-info">
+                            <div class="project-content">
+                                <a href="{{ project.url | prepend: site.baseurl }}">
+                                    <h3>{{ project.title }}</h3>
+                                    <p>{{ project.description }}</p>
                                 </a>
-                            {% endfor %}
+                            </div>
+                            <div class="tech-icons">
+                                {% for tech in project.tech %}
+                                    <a href="{{ tech.url }}" target="_blank" title="Visit {{ tech.name }} documentation">
+                                        <img src="{{ tech.icon | prepend: site.baseurl }}" alt="{{ tech.name }}" title="{{ tech.name }}">
+                                    </a>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
     </div>
 </div>
 
@@ -60,10 +120,6 @@ description: "What I cannot create, I do not understand.- Richard Feynman."
 {% endif %}
 
 <style>
-    #projects {
-        padding: 50px 15px;
-        border-bottom: 1px solid #dcd9d9;
-    }
     
     .project {
         position: relative;
@@ -182,5 +238,12 @@ description: "What I cannot create, I do not understand.- Richard Feynman."
             margin-top: auto; /* Push icons to bottom */
             padding-top: 10px; /* Add spacing above icons */
         }
+    }
+    #projects #tag_cloud a.tag-button {
+        background-color: #CDB4DB ; /* Light purple */
+    }
+    #projects #tag_cloud {
+        display: flex;
+        justify-content: center;
     }
 </style>

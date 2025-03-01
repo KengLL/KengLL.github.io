@@ -10,7 +10,7 @@ tech:
     icon: "/img/tech/python.png"
 description: Developed MultiRepast4py, a framework extending Repast4py to enable multilayer agent-based simulations for analyzing complex, interconnected systems.
 tags:
-  - Software Development
+  - "Software Development"
   - Research
 ---
 

@@ -14,7 +14,7 @@ tech:
 description: Built an autonomous vehicle prototype with lane following, GPS path tracking, and dynamic lane switching, displaying robotics and AI capabilities.
 tags:
   - AI/ML
-  - Embedded System
+  - "Embedded System"
 ---
 
 # Autonomous Vehicle Development with Jetson Nano and Donkey car
