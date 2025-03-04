@@ -5,7 +5,7 @@ Hi, I’m Roger (Keng-Lien) Lin, a Senior Computer Engineering student at UC San
 My primary focus is on **multilayer simulation**, where I created **MultiRepast4py**, a Python package that enables multilayer simulations on Repast4py. This tool is designed to make simulations more accessible to researchers, providing valuable insights in areas like combating misinformation and improving public health. I aim to expand my contributions by developing data-driven models and intelligent agents to tackle complex, real-world challenges.  
 
 ## Projects  
-I’ve worked on a variety of projects through hackathons, academic courses, and professional roles. My projects span areas such as system design, algorithm optimization, and innovative applications. You can explore more about these on the [Projects page](projects).  
+I’ve worked on a variety of projects through hackathons, academic courses, and professional roles. My projects span areas such as system design, algorithm optimization, and innovative applications. You can explore more about these on the [Projects page](/).  
 
 ## Personal Interests  
 Outside of work and academics, I’m an avid reader, writer, and athlete. I enjoy:  

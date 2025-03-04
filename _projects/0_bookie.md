@@ -1,0 +1,28 @@
+---
+layout: post
+title: Bookie
+github: "https://github.com/KengLL/Bookie"
+image: "/img/in-project/receipt.png"
+tech:
+  - name: "Javascript"
+    icon: "/img/tech/javascript.png"
+description: Create your own book list and share on social platforms!
+tags:
+  - "Software Development"
+---
+
+# Work in Progress - Join the journey!
+
+Check out [Bookie](https://localbookie.vercel.app/) and start curating your book list today!
+
+## Interface
+
+![image](/img/in-project/bookie_interface.png)
+
+## What's Next?
+
+📸 Snap & Add – Use image recognition & OCR to add books instantly!
+
+📚 Personal Library – Store and organize your collection seamlessly.
+
+🔄 Book Exchange – Connect with friends, see what they own, and swap books!

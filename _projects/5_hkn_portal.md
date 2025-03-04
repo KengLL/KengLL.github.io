@@ -2,6 +2,7 @@
 layout: post
 title: HKN Member Portal
 image: "/img/in-project/hkn_logo_test.jpg"
+github: "https://github.com/HKN-UCSD/hkn-portal"
 tech:
   - name: "Svelte"
     icon: "/img/tech/svelte.png"

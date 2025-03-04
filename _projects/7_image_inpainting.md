@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Inpainting
-github: "https://github.com/KengLL/MultiRepast4py"
+github: "https://github.com/hlm01/image_inpainting"
 image: "/img/in-project/inpaint.png"
 tech:
   - name: "Pytorch"
