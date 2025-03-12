@@ -31,16 +31,14 @@ Falls pose a significant risk, especially for the elderly or those in hazardous 
   - Soldered components to minimize weight and size.
   - Durable and portable for seamless integration into wearable devices.
 
-**Image Slot**: Add an image of the assembled hardware or a prototype.
+![Fall detector](/img/in-project/fall_detection.jpg)
 
 ---
 
 ## Software Architecture
 - **Microcontroller Integration**: Programmed fall-detection algorithms onto the microcontroller.
 - **Signal Transmission**: Implemented P2P communication protocols to ensure timely and reliable distress alerts.
-- **Programming Language**: Embedded C.
-
-**Image Slot**: Add a flowchart or diagram of the signal processing pipeline.
+- **Programming Language**: C++ via Arduino
 
 ---
 
@@ -57,8 +55,6 @@ Falls pose a significant risk, especially for the elderly or those in hazardous 
 - Soldered components for reduced weight and improved durability.
 - Compact design ensures it is comfortable to wear and suited for real-world applications.
 
-**Image Slot**: Add a schematic or photo of the soldered components.
-
 ---
 
 ## Challenges and Solutions
@@ -72,7 +68,6 @@ Falls pose a significant risk, especially for the elderly or those in hazardous 
 2. Soldered components to create a lightweight, compact design.
 3. Optimized P2P protocols for reliable communication within a defined radius.
 
-**Image Slot**: Before-and-after optimization comparison or photos.
 
 ---
 
@@ -80,8 +75,6 @@ Falls pose a significant risk, especially for the elderly or those in hazardous 
 - Real-time fall detection with high accuracy.
 - Lightweight and wearable design suitable for prolonged use.
 - Seamless P2P signal transmission to nearby devices, enabling prompt response.
-
-**Image Slot**: Add an image of the final prototype in use or during testing.
 
 ---
 

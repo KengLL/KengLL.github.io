@@ -57,8 +57,6 @@ TALLY’s instruction set is not directly compatible with ISAs like MIPS or ARM 
 
 The TALLY architecture also includes a custom Verilog module for implementing 16-bit floating point operations, as well as separate machine code files and lookup tables for each program. These can be compiled using `compile_asm.py`, and the binary files are loaded into the system by uncommenting the appropriate lines in `PC_LUT.sv` and `instr_ROM.sv`.
 
-**Image Slot**: Add a diagram of the TALLY architecture, showing the accumulator, registers, and control flow.
-
 ---
 
 ## Conclusion

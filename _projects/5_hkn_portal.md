@@ -34,8 +34,7 @@ The Member Portal was developed to provide users with an interactive and intuiti
   - **Svelte**: Frontend framework for creating dynamic and reactive user interfaces.
   - **Django**: Backend framework for handling user authentication, database interactions, and API integrations.
 
-**Image Slot**: Include a screenshot of the Member Portal's homepage or a user interface demo.
-
+![Member Portal Interface](/img/in-project/portal_interface.png)
 ---
 
 ## Key Features
@@ -51,8 +50,6 @@ The Member Portal was developed to provide users with an interactive and intuiti
 - Proposed and implemented a new workflow for direct communication between developers and the board.
 - This change improved task allocation, issue tracking, and overall collaboration efficiency.
 
-**Image Slot**: Add a screenshot of the Member Portal's dashboard or communication feature.
-
 ---
 
 ## Challenges and Solutions
@@ -66,7 +63,6 @@ The Member Portal was developed to provide users with an interactive and intuiti
 2. Optimized frontend performance with Svelte’s minimal reactivity model, ensuring smooth interactions.
 3. Designed a more direct communication channel and implemented tools to track progress and feedback.
 
-**Image Slot**: Add a diagram illustrating the communication workflow or architecture.
 
 ---
 
@@ -75,7 +71,6 @@ The Member Portal was developed to provide users with an interactive and intuiti
 - Delivered a highly responsive, dynamic platform that enhances user engagement and efficiency.
 - Successfully proposed and implemented a new workflow to streamline communication and collaboration.
 
-**Image Slot**: Add a screenshot or photo showcasing the portal's interface during a user session.
 
 ---
 

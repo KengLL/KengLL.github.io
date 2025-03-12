@@ -11,6 +11,7 @@ tech:
     url: "https://github.com/opencv"
   - name: "Python"
     icon: "/img/tech/python.png"
+github: "https://github.com/lilfishyswimmer/gestures_package"
 description: Built an autonomous vehicle prototype with lane following, GPS path tracking, and dynamic lane switching, displaying robotics and AI capabilities.
 tags:
   - AI/ML
@@ -35,7 +36,7 @@ Autonomous vehicles are at the forefront of modern technology. This project focu
 - **Actuators**: Servo motor for steering, ESC for throttle
 - **Other Components**: Wireless relay for emergency stop, LEDs for system feedback
 
-**Image Slot**: Add an image showcasing the hardware assembly.
+![RC car layout](/img/in-project/car_layout.png)
 
 ---
 
@@ -43,8 +44,6 @@ Autonomous vehicles are at the forefront of modern technology. This project focu
 - **Operating System**: Ubuntu for Jetson Nano
 - **Frameworks**: OpenCV, ROS2, DonkeyCar AI
 - **Programming Language**: Python
-
-**Image Slot**: Add a system diagram or architecture flowchart.
 
 ---
 
@@ -57,7 +56,6 @@ We implemented lane-following using OpenCV, detecting lane markers through edge 
 3. Perform Hough Transform to identify lane lines.
 4. Calculate steering angles using the detected lane position.
 
-**Image Slot**: Add screenshots or images of lane detection in action.
 
 ---
 
@@ -68,19 +66,7 @@ The GPS module was integrated to record and replay laps. The vehicle followed a 
 1. Record waypoints during the initial manual lap.
 2. Use PID control to minimize cross-track error while following the saved path.
 
-**Image Slot**: Include images or a map showing the recorded and replayed GPS paths.
-
----
-
-## Dynamic Lane Switching
-Using computer vision and real-time decision-making, the vehicle dynamically switched lanes based on lane availability.
-
-**Key Highlights**:
-- Adaptive algorithms to detect lane boundaries in varying lighting conditions.
-- OpenCV pipeline integrated with the Jetson Nano's GPU for real-time processing.
-
-**Image Slot**: Add video frames showing the lane-switching process.
-
+![GPS Racing](/img/in-project/gps_racing.png)
 ---
 
 ## Challenges and Solutions
@@ -89,12 +75,12 @@ Using computer vision and real-time decision-making, the vehicle dynamically swi
 2. **Noise in GPS Data**: Signal interference led to minor inaccuracies in path following.
 3. **Real-Time Constraints**: Achieving low-latency processing for decision-making.
 
+---
+
 ### Solutions:
 1. Used GPU-accelerated OpenCV for efficient processing.
 2. Implemented a Kalman filter to smooth GPS data.
 3. Leveraged asynchronous programming to handle real-time inputs.
-
-**Image Slot**: Add examples showing before-and-after optimization results.
 
 ---
 
@@ -103,8 +89,6 @@ Our autonomous vehicle achieved:
 - Accurate lane detection and following.
 - GPS path-following precision within 0.5 meters of the recorded path.
 - Smooth and reliable dynamic lane switching.
-
-**Image Slot**: Add a final demo or highlight reel image showcasing the project in action.
 
 ---
 

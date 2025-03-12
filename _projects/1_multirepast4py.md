@@ -53,6 +53,8 @@ This implementation is a direct extension of the **Rumor Model in Repast4py**, s
 ## Acknowledgments  
 Special thanks to the UCSD Summer Research Internship Program, NSF (Award CCF-2416311), and [MINDS Lab](https://parinazn.com/group/) for their support and the opportunity to pursue this research.  
 
+![Photo with my PI, Parinaz Naghizadeh](/img/in-project/pi_photo.JPG)
 ## Additional Information  
-- **Paper:** [AAMAS, arXiv (link to be added)]  
+- **Paper:** [AAMAS](https://github.com/KengLL/MultiRepast4py/blob/main/MultiRepast4py_MABS2025.pdf)
+- **Video Presentation** [UCSD Summer Research Conference 2024](https://youtu.be/F-69nq532dU?si=SHQo6uecUbGGGi0H)
 - **Future Work:** We plan to incorporate **data-driven features** and explore the integration of **intelligent agents powered by LLMs** to enhance the simulation capabilities.  

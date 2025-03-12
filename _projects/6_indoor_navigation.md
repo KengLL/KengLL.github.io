@@ -33,7 +33,7 @@ Indoor navigation is a challenging domain due to the lack of GPS signal reliabil
   - **Python**: Signal processing and triangulation algorithm implementation.
   - **JavaScript**: Visualization of transmitter and receiver locations on a graphical interface.
 
-**Image Slot**: Include an image of the Raspberry Pi setup or the Wi-Fi signal platform in action.
+![Image of Navgiation Car](/img/in-project/navigation_car.jpg)
 
 ---
 
@@ -50,8 +50,6 @@ Indoor navigation is a challenging domain due to the lack of GPS signal reliabil
 - Built a graphical interface in JavaScript to represent the indoor map.
 - Real-time visualization of transmitter and receiver locations for easy navigation.
 
-**Image Slot**: Add a screenshot of the interface displaying the navigation process.
-
 ---
 
 ## Challenges and Solutions
@@ -65,7 +63,6 @@ Indoor navigation is a challenging domain due to the lack of GPS signal reliabil
 2. Leveraged Python’s efficient libraries for signal processing to achieve low-latency performance.
 3. Simplified interface design with clear visual indicators for transmitters and receivers.
 
-**Image Slot**: Add a photo or diagram illustrating signal triangulation.
 
 ---
 
@@ -73,8 +70,6 @@ Indoor navigation is a challenging domain due to the lack of GPS signal reliabil
 - Achieved accurate real-time indoor navigation with Wi-Fi signals.
 - Developed a responsive graphical interface for intuitive navigation.
 - Delivered a working prototype within 24 hours, showcasing reliability and practical implementation.
-
-**Image Slot**: Add an image of the prototype in use during testing.
 
 ---
 
