@@ -14,9 +14,9 @@ tags:
 ---
 
 # Interactive Member Portal with Svelte and Django
-
+![Profile page](/img/in-project/profile.png)
 ## Overview
-During the development of the Member Portal, we focused on creating a dynamic, responsive web platform for 400+ users, utilizing Svelte and Django. The portal includes API integrations and responsive views to ensure a seamless user experience across devices. Additionally, a new workflow was proposed to facilitate direct communication between developers and the board, improving efficiency and collaboration.
+During the development of the Member Portal, we focused on creating a dynamic, responsive web platform for 1000+ users, utilizing Svelte and Django. The portal includes API integrations and responsive views to ensure a seamless user experience across devices. Additionally, a new workflow was proposed to facilitate direct communication between developers and the board, improving efficiency and collaboration.
 
 ---
 
@@ -34,7 +34,6 @@ The Member Portal was developed to provide users with an interactive and intuiti
   - **Svelte**: Frontend framework for creating dynamic and reactive user interfaces.
   - **Django**: Backend framework for handling user authentication, database interactions, and API integrations.
 
-![Member Portal Interface](/img/in-project/portal_interface.png)
 ---
 
 ## Key Features
@@ -50,6 +49,8 @@ The Member Portal was developed to provide users with an interactive and intuiti
 - Proposed and implemented a new workflow for direct communication between developers and the board.
 - This change improved task allocation, issue tracking, and overall collaboration efficiency.
 
+### 4. Network Oppourtunity and Course sharing (Due to privacy reasons, names are hidden)
+![Member Portal Interface](/img/in-project/Member_page.png)
 ---
 
 ## Challenges and Solutions
@@ -67,7 +68,7 @@ The Member Portal was developed to provide users with an interactive and intuiti
 ---
 
 ## Results
-- Created a user-friendly Member Portal with over 400 active users.
+- Created a user-friendly Member Portal with over 1000 users.
 - Delivered a highly responsive, dynamic platform that enhances user engagement and efficiency.
 - Successfully proposed and implemented a new workflow to streamline communication and collaboration.
 
@@ -75,7 +76,7 @@ The Member Portal was developed to provide users with an interactive and intuiti
 ---
 
 ## Achievements
-- **Successfully Deployed**: Interactive Member Portal for 400+ users.
+- **Successfully Deployed**: Interactive Member Portal for 1000+ users.
 - Recognized for improving user experience and communication workflows within the team.
 
 ---
