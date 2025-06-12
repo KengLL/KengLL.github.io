@@ -9,6 +9,7 @@ tech:
 description: Create your own book list and share on social platforms!
 tags:
   - "Software Development"
+  - "AI/ML"
 ---
 
 # Work in Progress - Join the journey!
