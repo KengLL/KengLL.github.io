@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bookie
+title: Sbookify
 github: "https://github.com/KengLL/BookList"
 image: "/img/in-project/sbookify.png"
 tech:
@@ -11,9 +11,6 @@ tags:
   - "Software Development"
   - "Full Stack"
 ---
-
-# Work in Progress - Join the journey!
-
   
 ## Introduction
 **Sbookify** allows users to **log in and create personal book lists**. Share your collection via a **unique link** and see what others own. It also features **receipt-style generation** (powered by an external project). Built with **Next.js**, it features powerful search functionality powered by **Google Books API**.
@@ -28,7 +25,11 @@ Check out [Sbookify](https://sbookify.vercel.app/) and start curating your book 
 
 ![image](/img/sbookify_interface.png)
 
-  
+
+## Unique Link Generation
+
+
+![image](/img/in-project/linkGeneration.png.png)
 
 ## What's Next?
 
