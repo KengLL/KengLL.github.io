@@ -10,7 +10,7 @@ tags:
 ---
 # TrailLink - Communication Device
 
-A lightweight, battery-efficient peer-to-peer (P2P) communication system designed to keep hiking groups connected—even in remote areas with no Wi-Fi or cellular service. Check out our [final video!] (https://youtu.be/S3GJz6STe1s?si=Hod9rd7MYCXkT04c)(Shout out to Alex Apollonov!)
+A lightweight, battery-efficient peer-to-peer (P2P) communication system designed to keep hiking groups connected—even in remote areas with no Wi-Fi or cellular service. Check out our [final video!](https://youtu.be/S3GJz6STe1s?si=Hod9rd7MYCXkT04c) (Shout out to Alex Apollonov!)
 
 ## Overview
 
