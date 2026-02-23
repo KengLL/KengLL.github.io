@@ -74,7 +74,7 @@ ga_domain: KengLL.github.com
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "Roger <br> Computer Engineer @ UCSD"
+sidebar-about-description: "Roger <br> Computer Science @ Cornell"
 sidebar-avatar: "/img/home-pfp.jpg" # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
